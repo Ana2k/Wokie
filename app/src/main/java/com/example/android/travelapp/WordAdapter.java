@@ -14,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
+import com.squareup.picasso.Picasso;
+
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
@@ -45,7 +47,7 @@ public class WordAdapter extends ArrayAdapter {
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
 
-        if(currentDetail.hasImage()){
+        /*if(currentDetail.hasImage()){
             imageView.setImageResource(currentDetail.getmImageResourceID());
             imageView.setVisibility(View.VISIBLE);
         }
@@ -53,8 +55,14 @@ public class WordAdapter extends ArrayAdapter {
             imageView.setVisibility(View.INVISIBLE);
         }//If image is provided for this number
         //display the image provided based on the id.
-        //else hide the ImageView
+        //else hide the ImageView*/
 
+
+        Picasso.get()
+                .load("https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/1024px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg")
+                //.placeholder(it)
+                //.error(it)
+                .into(imageView);
         View  textContainer = listItemView.findViewById(R.id.full_container);
         int color = ContextCompat.getColor(getContext(),mColorResourceID);
         textContainer.setBackgroundColor(color);
