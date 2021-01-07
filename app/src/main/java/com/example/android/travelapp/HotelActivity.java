@@ -16,7 +16,7 @@ public class HotelActivity extends AppCompatActivity {
 
         final ArrayList<Word> details = new ArrayList<Word>();
 
-        details.add(new Word("Hotels...bahot hai riverside ya kahi bhi","Riverside give good view, but not necessary good food"));
+        details.add(new Word("Hotels...bahot hai riverside ya kahi bhi","Riverside give good view, but not necessary good food","https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
 
         WordAdapter adapter = new WordAdapter(this, details, R.color.category_hotels);
         //adapter creates list item for each list item.

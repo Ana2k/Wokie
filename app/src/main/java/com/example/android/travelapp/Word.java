@@ -9,12 +9,8 @@ public class Word {
 
     private int mImageResourceID ;//for r.drawable only
 
-    private String mImageURL;
+    private String mImageURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg";
 
-    public Word(String itemName, String itemDetail ){
-        mItemName= itemName;
-        mItemDetail = itemDetail;
-    }
 
     /**
      * Create a new Word object.
@@ -22,6 +18,7 @@ public class Word {
      * @param itemName           is the name of the item being detailed
      * @param itemDetail         is the details of the described item
      * @param imageURL           is the nondrawable resource URL for the image associated with the word
+     *                           other one was
      */
 
     public Word(String itemName, String itemDetail, String imageURL){

@@ -15,9 +15,9 @@ public class AttractionsActivity extends AppCompatActivity {
         setContentView(R.layout.list);
 
         final ArrayList<Word>  details = new ArrayList<Word>();
-        details.add(new Word("Ganges boat ride","The boat RIde"));
-        details.add(new Word("GHat Walk","Walkfrom iconic ghats to and fro"));
-        details.add(new Word("Get lost..","No seriously! do get lost :P in the galis of varanasi"));
+        details.add(new Word("Ganges boat ride","The boat RIde","https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
+        details.add(new Word("GHat Walk","Walkfrom iconic ghats to and fro","https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
+        details.add(new Word("Get lost..","No seriously! do get lost :P in the galis of varanasi","https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
 
         WordAdapter adapter = new WordAdapter(this, details,R.color.category_attractions);
 

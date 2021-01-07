@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //edit activity in android manifest file if not done already
+
         //Find the view that shows places category
         TextView places = (TextView) findViewById(R.id.places);
         places.setOnClickListener(new View.OnClickListener() {

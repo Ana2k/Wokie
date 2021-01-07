@@ -68,6 +68,13 @@ public class WordAdapter extends ArrayAdapter {
                 .resize(111,111)
                 .into(imageView);
         Log.d("GEtIMAGEURL",currentDetail.getmImageURL());
+        //3rd party installed in implementation build gradle
+        //User permission edited in manifest file regarding internet
+        //Picasso churaya from atm1504 blog on picasso
+        //resize is neew
+
+        //WordAdapter adapted to include string URL and get it.
+
         View  textContainer = listItemView.findViewById(R.id.full_container);
         int color = ContextCompat.getColor(getContext(),mColorResourceID);
         textContainer.setBackgroundColor(color);

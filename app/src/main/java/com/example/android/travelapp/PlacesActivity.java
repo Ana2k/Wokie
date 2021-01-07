@@ -16,10 +16,10 @@ public class PlacesActivity extends AppCompatActivity {
 
         final ArrayList<Word> details = new ArrayList<>();
 
-        details.add(new Word("Assi Ghat","The most iconics Ghat of varanasi"));
-        details.add(new Word("BHU","One of the Oldest and largest university of India "));
-        details.add(new Word("Vishawanasth Ghat","During evenign the aarti is to die for"));
-        details.add(new Word("<add further items in placeAct.java>",""));
+        details.add(new Word("Assi Ghat","The most iconics Ghat of varanasi", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
+        details.add(new Word("BHU","One of the Oldest and largest university of India ", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
+        details.add(new Word("Vishawanasth Ghat","During evenign the aarti is to die for", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
+        details.add(new Word("<add further items in placeAct.java>","", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
 
         WordAdapter adapter = new WordAdapter(this, details, R.color.category_places);
         //adapter creates list item for each list item.
