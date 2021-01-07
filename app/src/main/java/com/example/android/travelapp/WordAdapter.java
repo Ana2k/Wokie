@@ -59,9 +59,9 @@ public class WordAdapter extends ArrayAdapter {
 
 
         Picasso.get()
-                .load("https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/1024px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg")
-                //.placeholder(it)
-                //.error(it)
+                .load("https://www.incredibleindia.org/content/dam/incredible-india-v2/images/places/varanasi/ghats-of-varanasi-manikarnika-ghat.jpg/_jcr_content/renditions/cq5dam.web.256.256.jpeg")
+                .placeholder(R.drawable.ic_launcher_background)
+                .error(R.drawable.ic_launcher_background)
                 .into(imageView);
         View  textContainer = listItemView.findViewById(R.id.full_container);
         int color = ContextCompat.getColor(getContext(),mColorResourceID);
