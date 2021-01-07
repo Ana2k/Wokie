@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Wokie!</string>
+    <!--App Name-->
+
+    <!-- Category name for places [CHAR LIMIT=20] -->
+    <string name="category_places">Places</string>
+
+    <!-- Category name for the food [CHAR LIMIT=20] -->
+    <string name="category_food">Food</string>
+
+    <!-- Category name for the vocabulary words for hotels [CHAR LIMIT=20] -->
+    <string name="category_hotels">Hotels</string>
+
+    <!-- Category name for the vocabulary words for Attractions [CHAR LIMIT=20] -->
+    <string name="category_attractions">Attractions</string>
+</resources>
