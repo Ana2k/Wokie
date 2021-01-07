@@ -1,13 +1,15 @@
 package com.example.android.travelapp;
 
 public class Word {
-    private static final int NO_IMAGE_PROVIDED=0;
+    private static final String NO_IMAGE_PROVIDED="\0";
 
     private String mItemName;
 
     private String mItemDetail;
 
-    private int mImageResourceID = NO_IMAGE_PROVIDED;
+    private int mImageResourceID ;//for r.drawable only
+
+    private String mImageURL;
 
     public Word(String itemName, String itemDetail ){
         mItemName= itemName;
@@ -19,13 +21,15 @@ public class Word {
      *
      * @param itemName           is the name of the item being detailed
      * @param itemDetail         is the details of the described item
-     * @param imageResourceID    is the drawable resource ID for the image associated with the word
+     * @param imageURL           is the nondrawable resource URL for the image associated with the word
      */
 
-    public Word(String itemName, String itemDetail, int imageResourceID){
+    public Word(String itemName, String itemDetail, String imageURL){
         mItemName = itemName;
         mItemDetail = itemDetail;
-        mImageResourceID = imageResourceID;
+        mImageURL = imageURL;
+        //mImageResourceID = imageResourceID;
+
     }
 
     public String getmItemName(){
@@ -37,11 +41,14 @@ public class Word {
     public int getmImageResourceID(){
         return mImageResourceID;
     }
+    public String getmImageURL(){
+        return mImageURL;
+    }
     //gets resources from given class
 
-    public boolean hasImage(){
+    /*public boolean hasImage(){
         return mImageResourceID != NO_IMAGE_PROVIDED;
-    }
+    }*/
     // returns wether image exists
 
 }

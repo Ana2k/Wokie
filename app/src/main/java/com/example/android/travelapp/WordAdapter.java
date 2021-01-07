@@ -3,6 +3,7 @@ package com.example.android.travelapp;
 import android.app.Activity;
 import android.content.Context;
 import android.media.Image;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,8 @@ import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter {
@@ -56,13 +59,15 @@ public class WordAdapter extends ArrayAdapter {
         }//If image is provided for this number
         //display the image provided based on the id.
         //else hide the ImageView*/
-
+        
 
         Picasso.get()
-                .load("https://www.incredibleindia.org/content/dam/incredible-india-v2/images/places/varanasi/ghats-of-varanasi-manikarnika-ghat.jpg/_jcr_content/renditions/cq5dam.web.256.256.jpeg")
+                .load(currentDetail.getmImageURL())
                 .placeholder(R.drawable.ic_launcher_background)
-                .error(R.drawable.ic_launcher_background)
+                .error(R.drawable.ghats)
+                .resize(111,111)
                 .into(imageView);
+        Log.d("GEtIMAGEURL",currentDetail.getmImageURL());
         View  textContainer = listItemView.findViewById(R.id.full_container);
         int color = ContextCompat.getColor(getContext(),mColorResourceID);
         textContainer.setBackgroundColor(color);

@@ -20,11 +20,10 @@ public class FoodActivity extends AppCompatActivity {
         Log.d("debug","opens foodAct");
         final ArrayList<Word> details = new ArrayList<Word>();
 
-        details.add(new Word("Banarasi Paan","Eat this iconic food from blah blah place"));
-        details.add(new Word("Thandai", "Best is found in dashwashwamed crossing in Baba ki thandai"));
-        details.add(new Word("Chaat","Deena chat is THE PLACE to eat this"));
-        details.add(new Word("<add further detials in foodAct.java>",""));
-
+        details.add(new Word("Banarasi Paan","Eat this iconic food from blah blah place","https://img.icons8.com/material/4ac144/256/user-male.png"));
+        details.add(new Word("Thandai", "Best is found in dashwashwamed crossing in Baba ki thandai","https://img.icons8.com/material/4ac144/256/user-male.png"));
+        details.add(new Word("Chaat","Deena chat is THE PLACE to eat this","https://img.icons8.com/material/4ac144/256/user-male.png"));
+        details.add(new Word("<add further detials in foodAct.java>","","https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kedar_Ghat_in_Varanasi.jpg/183px-Kedar_Ghat_in_Varanasi.jpg"));
         //FILL IN THE DETAILS HERE
 
         WordAdapter adapter = new WordAdapter(this, details, R.color.category_food);
