@@ -1,20 +1,23 @@
 package com.example.android.travelapp;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import androidx.annotation.Nullable;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class foodAct extends AppCompatActivity {
+public class FoodActivity extends AppCompatActivity {
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.list);
+    protected void onCreate(Bundle savedInstanceState) {
 
+        super.onCreate(savedInstanceState);
+        Log.d("debug","opens foodAct-ONcreate");
+        setContentView(R.layout.list);
+        Log.d("debug","opens foodAct");
         final ArrayList<Word> details = new ArrayList<Word>();
 
         details.add(new Word("Banarasi Paan","Eat this iconic food from blah blah place"));
@@ -28,7 +31,7 @@ public class foodAct extends AppCompatActivity {
         //adapter creates list item for each list item.
         ListView listView = (ListView) findViewById(R.id.list);
 
-        listView.setAdapter((ListAdapter) adapter);
+        listView.setAdapter(adapter);
 
         //Media player track not required here
 

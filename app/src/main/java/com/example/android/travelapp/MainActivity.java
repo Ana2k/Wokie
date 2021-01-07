@@ -4,10 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         places.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent placesIntent = new Intent(MainActivity.this, placesAct.class);
+                Intent placesIntent = new Intent(MainActivity.this, PlacesActivity.class);
                 startActivity(placesIntent);
             }
         });
@@ -31,8 +30,10 @@ public class MainActivity extends AppCompatActivity {
         food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent foodIntent = new Intent(MainActivity.this, foodAct.class );
-                startActivity(foodIntent);
+                Log.d("DEBUG","In mainact -1");
+               Intent foodIntent = new Intent(getBaseContext(), FoodActivity.class);
+               startActivity(foodIntent);
+                Log.d("DEBUG","In mainact -3");
             }
         });
 
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         hotels.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent hotelsIntent = new Intent(MainActivity.this, hotelsAct.class );
+                Intent hotelsIntent = new Intent(MainActivity.this, HotelActivity.class );
                 startActivity(hotelsIntent);
             }
         });
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         attractions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent attractionsIntent = new Intent(MainActivity.this, attractionsAct.class );
+                Intent attractionsIntent = new Intent(MainActivity.this, AttractionsActivity.class );
                 startActivity(attractionsIntent);
             }
         });
