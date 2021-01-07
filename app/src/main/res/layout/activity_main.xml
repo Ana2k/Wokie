@@ -5,39 +5,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?selectableItemBackground"
     android:orientation="vertical"
     tools:context="com.example.android.travelapp.MainActivity">
 
 
-        <TextView
-            android:id="@+id/places"
-            style="@style/CategoryStyle"
-            android:background="@color/category_places"
-            android:text="@string/category_places"
-            android:paddingLeft="16dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_places">
+                <TextView
+                    android:id="@+id/places"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_places"
+                    android:paddingLeft="16dp"/>
 
-        <TextView
-            android:id="@+id/food"
-            style="@style/CategoryStyle"
-            android:background="@color/category_food"
-            android:text="@string/category_food"
-            android:paddingLeft="16dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_food">
+                <TextView
+                    android:id="@+id/food"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_food"
+                    android:paddingLeft="16dp"/>
+
+        </FrameLayout>
 
 
-        <TextView
-            android:id="@+id/hotels"
-            style="@style/CategoryStyle"
-            android:background="@color/category_hotels"
-            android:text="@string/category_hotels"
-            android:paddingLeft="16dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_hotels">
+                <TextView
+                    android:id="@+id/hotels"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_hotels"
+                    android:paddingLeft="16dp"/>
+
+        </FrameLayout>
 
 
-        <TextView
-            android:id="@+id/attractions"
-            style="@style/CategoryStyle"
-            android:background="@color/category_attractions"
-            android:text="@string/category_attractions"
-            android:paddingLeft="16dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_attractions">
+                <TextView
+                    android:id="@+id/attractions"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_attractions"
+                    android:paddingLeft="16dp"/>
+
+        </FrameLayout>
 
 </LinearLayout>
